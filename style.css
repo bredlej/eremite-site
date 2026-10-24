@@ -197,9 +197,7 @@ footer.site a { color: var(--muted); }
 .tier p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.5; }
 .promise { margin: 20px 0 0; font-weight: 600; }
 
-.tables { text-align: center; padding: 24px 0 16px; }
-.tables h2 { font-size: 28px; margin: 6px 0 12px; text-wrap: balance; }
-.tables .lede { color: var(--muted); margin: 0 auto 20px; max-width: 34em; }
+.tables { margin: -8px 0 16px; }
 .ways {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
