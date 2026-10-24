@@ -208,6 +208,10 @@ footer.site a { color: var(--muted); }
 }
 .ways .tier { background: var(--surface); }
 
+.handmade { text-align: center; margin: 8px 0 40px; }
+.handmade h2 { font-size: 24px; margin: 6px 0 12px; text-wrap: balance; }
+.handmade p { color: var(--muted); margin: 0 auto; max-width: 34em; }
+
 .portable { margin: 16px 0 40px; }
 .portable h2 { font-size: 24px; margin: 0 0 16px; text-align: center; text-wrap: balance; }
 .portable .tier { background: var(--surface); border-top: 3px solid var(--accent); }
