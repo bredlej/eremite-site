@@ -166,7 +166,33 @@ footer.site a { color: var(--muted); }
 }
 .spotlight.flip { grid-template-columns: 3fr 2fr; }
 .spotlight.flip .spotlight-text { order: 2; }
+.spotlight.tall { grid-template-columns: 1fr 1fr; }
 .spotlight h2 { font-size: 28px; margin: 6px 0 12px; }
+
+/* An iPad screenshot with the iPhone one overlapping its bottom-right corner. */
+.pair {
+  position: relative;
+  margin: 0 auto;
+  max-width: 460px;
+  width: 100%;
+  padding: 0 14% 8% 0;
+}
+.pair.landscape { max-width: none; padding: 0 10% 12% 0; }
+.pair img {
+  display: block;
+  height: auto;
+  border: 1px solid var(--rule);
+  box-shadow: var(--shadow);
+}
+.pair .ipad { width: 100%; border-radius: 16px; }
+.pair .iphone {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 34%;
+  border-radius: 20px;
+}
+.pair.landscape .iphone { width: 22%; }
 .spotlight p { margin: 0; color: var(--muted); }
 
 .feature { border-top: 3px solid var(--accent-2); }
@@ -220,7 +246,8 @@ footer.site a { color: var(--muted); }
 
 @media (max-width: 760px) {
   .spotlight { grid-template-columns: 1fr; gap: 20px; padding: 28px 0; }
-  .spotlight.flip { grid-template-columns: 1fr; }
+  .spotlight.flip, .spotlight.tall { grid-template-columns: 1fr; }
+  .pair { max-width: 420px; }
   .spotlight.flip .spotlight-text { order: 0; }
 }
 
